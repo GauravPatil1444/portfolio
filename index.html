@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gaurav Patil</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="logospace">Gaurav Patil</div>
+      <ul>
+        <li class="navlinks"><a href="#about">About</a></li>
+        <li class="navlinks"><a href="#skills">Skills</a></li>
+        <li class="navlinks"><a href="#projects">Projects</a></li>
+        <li class="navlinks"><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="menubtn" onclick="menuclick()">
+        <img id="menuicon" src="/assets/menu.png" alt="?" />
+      </button>
+    </div>
+    <div class="section1" id="about"> 
+        <div class="profileimg">
+            <img src="/assets/Gaurav.jpg" alt="couldn't load" />
+        </div>
+        <div class="intro">
+            <div class="hello"><h3>Hello, I'm</h3></div>
+            <div class="name">Gaurav Patil</div>
+            <div class="specialization">Full Stack Developer</div>
+            <div class="intro_btns">
+                <button id="downloadbtn" onclick="downloadcv()" class="btn">Download CV</button>
+                <button id="contactbtn" onclick="{window.location.href='#contact'}" class="btn">Contact me</button>
+            </div>
+            <div class="intro-sites">
+                <a href="https://www.linkedin.com/in/gaurav-patil-b7354a257/"><img class="sitelogos" src="/assets/linkedin.png"alt="Linkedin"></a>
+                <a href="https://github.com/GauravPatil1444/"><img class="sitelogos" src="/assets/github.png"alt="github"></a>
+            </div>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="education">
+          <h3>Education</h3>
+          <p>B.Tech. Computer Science and Engineering (Data Science)</p>
+          <img id="eduicon" src="/assets/education.png" alt="">
+          <p>R.C.Patel Institute of Technology, Shirpur</p>
+        </div>
+      </div>
+      
+      <div id="skills">
+        <div class="heading">
+          <p>My Skills</p>
+        </div>
+        <div id="containers">
+          <div class="skillcontainer" id="languages">
+            <p>Languages</p>
+            <div class="skillcolumn">
+              <div class="skill"><img src="/assets/js.png" alt="">JavaScript</div>
+              <div class="skill"><img src="/assets/python.png" alt="">Python</div>
+            </div>
+            <div class="skillcolumn">
+              <div class="skill"><img src="/assets/java.png" alt="">Java</div>
+              <div class="skill"><img src="/assets/C.png" alt="">C</div>
+            </div>
+          </div>
+          <div class="skillcontainer" id="concepts">
+            <p>Concepts</p>
+              <div class="skill"><img src="/assets/verify.png" alt="">Object-Oriented Programming (OOP)</div>
+              <div class="skill"><img src="/assets/verify.png" alt="">Machine Learning</div>
+              <div class="skill"><img src="/assets/verify.png" alt="">Data Structures</div>
+              <div class="skill"><img src="/assets/verify.png" alt="">Rest APIs</div>
+          </div>
+          <div class="skillcontainer" id="technologies">
+            <p>Technologies</p>
+            <div class="skillcolumn">
+              <div class="skill"><img src="/assets/react.png" alt="">React.js</div>
+              <div class="skill"><img src="/assets/mongo.png" alt="">MongoDB</div>
+              <div class="skill"><img src="/assets/sql.png" alt="">SQL</div>
+            </div>
+            <div class="skillcolumn">
+              <div class="skill"><img src="/assets/node.png" alt="">Node.js</div>
+              <div class="skill"><img src="/assets/firebase.png" alt="">Firebase</div>
+              <div class="skill"><img src="/assets/html.png" alt="">HTML</div>
+            </div>
+            <div class="skillcolumn">
+              <div class="skill"><img src="/assets/js.png" alt="">Express.js</div>
+              <div class="skill"><img src="/assets/python.png" alt="">FastAPI</div>
+              <div class="skill"><img src="/assets/css.png" alt="">CSS</div>
+            </div>
+        </div>
+      </div>
+
+
+      <div id="projects">
+        <div class="heading">
+          <p>Projects</p>
+        </div>
+        <div id="notemate">
+          <div class="overview">
+            <div class="summary">
+              <p class="title">NoteMate</p>
+              <ul>
+                <li>Developed a note-taking and to-do application with a
+                  user-friendly interface</li>
+                <li>Employed React for front-end development, ensuring a
+                  responsive and interactive user experience.</li>
+                <li>Utilized Firebase for backend services, including authentication,
+                  cloud storage and Hosting.</li>
+                <li>Integrated dark mode and light mode settings with dynamic
+                  background color adjustments.</li>
+                <li>Developed an Android Webview app for easy access</li>
+                <li>Ensured seamless data synchronization across devices, providing
+                  users with a consistent experience.</li>
+              </ul>
+            </div>
+
+            <div class="projectdemo">
+              <div class="projectlinks">
+                <a href="https://notemate-38c8a.web.app/">https://notemate-38c8a.web.app/ <img width="15" src="assets/link.png" alt=""></a>
+                <button class="projectlinks-btn"><img width="25" src="/assets/github.png"alt="github">Github</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="smart">
+          <div class="overview">
+            <div class="summary">
+              <p class="title"><img width="245" src="/assets/SMart Logo.png" alt=""></p>
+              <ul>
+                <li>Developed an E-commerce platform for a supermarket, enhancing
+                  the online shopping experience.</li>
+                <li>Offered a wide range of products including groceries, household
+                  items, electronics, and more.</li>
+                <li>Implemented features like "buy now," "add to cart," and "select
+                  quantity" to improve user convenience.</li>
+                <li>Utilized JSON for storing product details.</li>
+              </ul>
+            </div>
+
+            <div class="projectdemo">
+              <div class="landscapevideo">
+                  <video src=""></video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+        
+    <script src="src/index.js"></script>
+  </body>
+</html>
